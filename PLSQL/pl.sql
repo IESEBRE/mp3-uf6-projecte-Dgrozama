@@ -1,1 +1,0 @@
--- Poseu el codi dels procediments/funcions emmagatzemats, triggers, ..., usats al projecte

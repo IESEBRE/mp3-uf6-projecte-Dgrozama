@@ -1,36 +1,36 @@
 package org.example.view;
 
-import org.example.model.entities.Alumne;
+import org.example.model.entities.Usuari;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
 public class ModelComponentsVisuals {
 
-    private DefaultTableModel modelTaulaAlumne;
-    private DefaultTableModel modelTaulaMat;
-    private ComboBoxModel<Alumne.Matricula.Modul> comboBoxModel;
+    private DefaultTableModel model;
+    private DefaultTableModel modelPais;
+    private ComboBoxModel<Usuari.Pais.paisos> comboBoxModel;
 
     //Getters
 
 
-    public ComboBoxModel<Alumne.Matricula.Modul> getComboBoxModel() {
+    public ComboBoxModel<Usuari.Pais.paisos> getComboBoxModel() {
         return comboBoxModel;
     }
 
-    public DefaultTableModel getModelTaulaAlumne() {
-        return modelTaulaAlumne;
+    public DefaultTableModel getModel() {
+        return model;
     }
 
-    public DefaultTableModel getModelTaulaMat() {
-        return modelTaulaMat;
+    public DefaultTableModel getModelPais() {
+        return modelPais;
     }
 
     public ModelComponentsVisuals() {
 
 
         //Anem a definir l'estructura de la taula dels alumnes
-        modelTaulaAlumne =new DefaultTableModel(new Object[]{"Nom","Pes","És alumne?","Object"},0){
+        model =new DefaultTableModel(new Object[]{"Usuari","Seguidors","Verificat","Object"},0){
             /**
              * Returns true regardless of parameter values.
              *
@@ -56,7 +56,7 @@ public class ModelComponentsVisuals {
                     case 0:
                         return String.class;
                     case 1:
-                        return Double.class;
+                        return Integer.class;
                     case 2:
                         return Boolean.class;
                     default:
@@ -69,7 +69,7 @@ public class ModelComponentsVisuals {
 
 
         //Anem a definir l'estructura de la taula de les matrícules
-        modelTaulaMat =new DefaultTableModel(new Object[]{"MP","Nota"},0){
+        modelPais =new DefaultTableModel(new Object[]{"País","Top Local"},0){
             /**
              * Returns true regardless of parameter values.
              *
@@ -91,7 +91,7 @@ public class ModelComponentsVisuals {
             public Class getColumnClass(int column) {
                 switch (column) {
                     case 0:
-                        return Alumne.Matricula.Modul.class;
+                        return Usuari.Pais.paisos.class;
                     case 1:
                         return Integer.class;
                     default:
@@ -103,7 +103,7 @@ public class ModelComponentsVisuals {
 
 
         //Estructura del comboBox
-        comboBoxModel=new DefaultComboBoxModel<>(Alumne.Matricula.Modul.values());
+        comboBoxModel=new DefaultComboBoxModel<>(Usuari.Pais.paisos.values());
 
 
 

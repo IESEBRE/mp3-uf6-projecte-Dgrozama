@@ -3,35 +3,35 @@ package org.example.view;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-public class MatriculaView extends JFrame{
+public class VistaPais extends JFrame{
     private JTabbedPane pestanyes;
     private JTable taula;
     private JScrollPane scrollPane1;
     private JButton insertarButton;
     private JButton modificarButton;
     private JButton borrarButton;
-    private JTextField campNom;
-    private JTextField campPes;
-    private JCheckBox caixaAlumne;
+    private JTextField campUsuari;
+    private JTextField campSeguidors;
+    private JCheckBox caixaVerificat;
     private JPanel panel;
-    private JTable taulaMat;
-    private JComboBox comboMP;
-    private JTextField campNota;
+    private JTable taulaPais;
+    private JComboBox comboPaisos;
+    private JTextField campTop;
     //private JTabbedPane PanelPestanya;
 
     //Getters
 
 
-    public JTable getTaulaMat() {
-        return taulaMat;
+    public JTable getTaulaPais() {
+        return taulaPais;
     }
 
-    public JComboBox getComboMP() {
-        return comboMP;
+    public JComboBox getComboPaisos() {
+        return comboPaisos;
     }
 
-    public JTextField getCampNota() {
-        return campNota;
+    public JTextField getCampTop() {
+        return campTop;
     }
 
     public JTabbedPane getPestanyes() {
@@ -54,21 +54,21 @@ public class MatriculaView extends JFrame{
         return insertarButton;
     }
 
-    public JTextField getCampNom() {
-        return campNom;
+    public JTextField getCampUsuari() {
+        return campUsuari;
     }
 
-    public JTextField getCampPes() {
-        return campPes;
+    public JTextField getCampSeguidors() {
+        return campSeguidors;
     }
 
-    public JCheckBox getCaixaAlumne() {
-        return caixaAlumne;
+    public JCheckBox getCaixaVerificat() {
+        return caixaVerificat;
     }
 
 
     //Constructor de la classe
-    public MatriculaView() {
+    public VistaPais() {
 
 
         //Per poder vore la finestra

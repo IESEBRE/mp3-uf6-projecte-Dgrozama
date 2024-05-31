@@ -8,20 +8,21 @@ public class DAOException extends Exception{
     private static final Map<Integer, String> missatges = new HashMap<>();
     //num i retorna string, el map
     static {
-        missatges.put(0, "Error al connectar a la BD!!");
-        missatges.put(1, "Restricció d'integritat violada - clau primària duplicada");
-        missatges.put(904, "Nom de columna no vàlid");
-        missatges.put(936, "Falta expressió en l'ordre SQL");
-        missatges.put(942, "La taula o la vista no existeix");
-        missatges.put(1000, "S'ha superat el nombre màxim de cursors oberts");
-        missatges.put(1400, "Inserció de valor nul en una columna que no permet nuls");
-        missatges.put(1403, "No s'ha trobat cap dada");
-        missatges.put(1722, "Ha fallat la conversió d'una cadena de caràcters a un número");
-        missatges.put(1747, "El nombre de columnes de la vista no coincideix amb el nombre de columnes de les taules subjacents");
-        missatges.put(4091, "Modificació d'un procediment o funció en execució actualment");
-        missatges.put(6502, "Error numèric o de valor durant l'execució del programa");
-        missatges.put(12154, "No s'ha pogut resoldre el nom del servei de la base de dades Oracle o l'identificador de connexió");
-        missatges.put(2292, "S'ha violat la restricció d'integritat -  s'ha trobat un registre fill");
+        missatges.put(1, "Ha petat la base de dades!!");
+        missatges.put(2, "Falta omplir alguna dada o hi ha informació no vàlida!!");
+        missatges.put(3, "Aquest nom d'usuari ja està en ús. Si us plau, tria'n un altre.");
+        missatges.put(4, "Has d'introduir un número de seguidors correcte (>=0!!)");
+        missatges.put(5, "Has d'introduir uns ingréssos correctes (>=0.0€!!)");
+        missatges.put(6, "Has d'introduir un nom d'usuari amb més de 4 caràcters i no ha de ser repetit!!");
+        missatges.put(7, "Per borrar una fila l'has de seleccionar a la taula");
+        missatges.put(8, "Per modificar una fila l'has de seleccionar a la taula");
+        missatges.put(9, "Has d'introduir un top local vàlid (>0!!)");
+        missatges.put(10, "Hi ha hagut algun problema a l'intentar guardar les dades");
+        missatges.put(11, "No s'ha pogut guardar l'usuari a la base de dades.");
+        missatges.put(12, "No s'ha pogut actualitzar l'usuari a la base de dades.");
+        missatges.put(13, "No s'ha pogut esborrar l'usuari de la base de dades.");
+        missatges.put(14, "No es pot repetir el nom d'usuari.");
+
     }
 
     //atribut
